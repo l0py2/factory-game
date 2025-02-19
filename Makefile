@@ -9,6 +9,8 @@ all: ${OUT}
 clean:
 	@rm -f %.o
 
+main.o:
+
 ${OUT}: ${OBJ}
 	${CC} ${LDLIBS} -o $@ $^
 
